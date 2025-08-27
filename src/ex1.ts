@@ -1,11 +1,11 @@
-// 1. Create a Promise that returns the string "Hello Async" after 2 seconds.
+// 11. Convert Exercise 1 into async/await.
 
-function sayHelloAsync(): Promise<string> {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Hello Async");
-    }, 2000);
-  });
+async function sayHelloAsync2(): Promise<string> {
+  await new Promise<void>((resolve) => setTimeout(resolve, 2000));
+  return "Hello Async";
 }
 
-sayHelloAsync().then((message: string) => console.log(message));
+(async () => {
+  const message = await sayHelloAsync2();
+  console.log(message);
+})();
