@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
-    "lib": ["ES2019", "DOM"],
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
     "module": "commonjs", /* Sử dụng module CommonJS */
     "strict": true, /* Bật kiểm tra strict */
     "esModuleInterop": true, /* Hỗ trợ import/export ES Modules */
